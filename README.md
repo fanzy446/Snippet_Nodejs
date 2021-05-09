@@ -1,1 +1,4 @@
 # Snippet_Nodejs
+I implemented the basic requirement and the second extension in this exercise.
+The snippets are stored in a in-memory dictionary, that makes lookup fast. A design decision I made is to clear the snippets that expire so that we don't spam the storage and the keys can be used again by other users. The downside, however, is we permenantly lost data the expires which could be a bad user experience if the user wants to get the important snippet after the expiration. I think a better approach is to introduce some retention policy.
+For the second extension, I made some product decisions which were added as comment in the code.
